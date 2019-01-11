@@ -12,7 +12,8 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author.id == "459591712369541140":
-        client.delete_messages(message)
+        print("a")
+        await client.delete_message(message)
     print(message.author.name)
 
 
